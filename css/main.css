@@ -1,0 +1,181 @@
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover{
+ color: #E95853;
+}
+
+/* SECCION .MENU */
+/* Estilos para que quede fijo en la parte superior y ocupe todo el ancho de la pantalla */
+
+.menu{
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.menu.flex-container{
+	justify-content: flex-start;
+}
+
+.logo-container{
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.flex-container .logo{
+	width: 70px;
+	height: 70px;
+}
+
+/* SECCION #HOME */
+
+#home{
+	height: 600px;
+	margin-top: 70px;
+
+	background-image: url(../assets/images/bg-home.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed; /*fija el fondo como parallax*/
+	background-repeat: no-repeat;
+
+	justify-content: center;/* todos los elementos centrados horizontalmente */
+	align-items: center;/* todos los elementos centrados verticalmente */
+	flex-direction: column;/* para que se despliegue de forma vertical */
+
+	/* NOTA: justify-content y align-items posicionan al centro de la seccion en ambos ejes*/
+
+
+	color: whitesmoke;
+}
+
+.text-home{
+	font-size: 2.4em;
+}
+
+/* BOTON HOME */
+
+.btn-home{ /* funcional que al pinchar me lleva a seccion services */
+ 	background: #2Ecc71;
+ 	color: #fff;
+ 	padding: 11px 20px;
+ 	border-radius: 1px;
+ 	font-weight: 500;
+ 	text-transform: uppercase;
+ 	margin-top: 63px;
+ 	display: inline-block;
+ 	font-size: 14px;
+ }
+
+
+/* SECCION #SERVICES */
+
+#services{
+	background-color: #F17C72;
+	text-align: center;
+	color: #fff;
+	padding: 70px;
+}
+
+#services.flex-container{
+	justify-content: space-around;/*elementos internos se distribuyen dentro de la pantalla dejando un espacio a cada lado */
+	flex-wrap: wrap;/* para que los elementos no se vean forzados a desplegarse en una sola linea */
+}
+
+
+.box-services{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* SECCION WORK */
+
+#work{
+	text-align: center;
+}
+
+.laptop{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8% 8%;
+}
+
+.caja{
+	width: 30%;
+	cursor: pointer;
+}
+
+.box-content{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 5% 5% 5%;
+}
+
+/* MODAL PARA SECCION WORK */
+
+.hide{
+  display: none;
+}
+
+#box-work-modal{
+	background-color: #56d3a9;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.modal-body{
+	width: 60%;
+	margin: 1% auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 4px solid whitesmoke;
+	box-sizing: border-box;
+}
+
+.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+#box-work-modal .close img{
+	width: 30px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+	background-color: #373B47;
+	color: whitesmoke;
+ 	text-align: center;
+ 	height: 70px;
+ 	padding-top: 7px;
+}
